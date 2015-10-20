@@ -3,7 +3,12 @@
 @import "functions";
 @import "variables";
 
+//library of scss files
+@import "lib/spectrum";
+
+//modules
 @import "module/controls";
 @import "module/stage";
 
+//layout
 @import "layout/main";

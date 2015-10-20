@@ -15,34 +15,43 @@
 				<h1 class="stage-text-headline">This is a mix</h1>
 			</div>
 		</section>
-		<section>
-			<h2>The current mix-blend-mode: <span id="mode">color-burn</span></h2>
-		</section>
 		<section class="controls">
-			<textarea>Enter your text here…</textarea>
-			<div>
-				<button data-blend="normal">Normal</button>
-				<button data-blend="multiply">multiply</button>
-				<button data-blend="screen">screen</button>
-				<button data-blend="overlay">overlay</button>
-				<button data-blend="darken">darken</button>
-				<button data-blend="lighten">lighten</button>
-				<button data-blend="color-dodge">color-dodge</button>
-				<button data-blend="color-burn">color-burn</button>
-				<button data-blend="hard-light">hard-light</button>
-				<button data-blend="soft-light">soft-light</button>
-				<button data-blend="difference">difference</button>
-				<button data-blend="exclusion">exclusion</button>
-				<button data-blend="hue">hue</button>
-				<button data-blend="saturation">saturation</button>
-				<button data-blend="color">color</button>
-				<button data-blend="luminosity">luminosity</button>			
+			<div class="blend-controls">
+				<h2>The current mix-blend-mode: <span id="mode">color-burn</span></h2>
+				<div class="blend-buttons">
+					<button data-blend="normal">Normal</button>
+					<button data-blend="multiply">multiply</button>
+					<button data-blend="screen">screen</button>
+					<button data-blend="overlay">overlay</button>
+					<button data-blend="darken">darken</button>
+					<button data-blend="lighten">lighten</button>
+					<button data-blend="color-dodge">color-dodge</button>
+					<button data-blend="color-burn">color-burn</button>
+					<button data-blend="hard-light">hard-light</button>
+					<button data-blend="soft-light">soft-light</button>
+					<button data-blend="difference">difference</button>
+					<button data-blend="exclusion">exclusion</button>
+					<button data-blend="hue">hue</button>
+					<button data-blend="saturation">saturation</button>
+					<button data-blend="color">color</button>
+					<button data-blend="luminosity">luminosity</button>			
+				</div>
+			</div>
+			<div class="text-controls">
+				<h2>Enter your own text</h2>
+				<textarea>Enter your text here…</textarea>
+			</div>
+			<div class="color-controls">
+				<h2>Select a color</h2>
+				<input type='text' class="basic"/>
+				<em id='basic-log'>Current color is: #E67878</em>
 			</div>
 		</section>
 	</main>
 	<footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-		<script src="js/app.js"></script>
+		<script src="js/spectrum.min.js"></script>
+		<script src="js/app.min.js"></script>
 	</footer>
 	
 </body>

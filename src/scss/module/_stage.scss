@@ -2,6 +2,17 @@
   overflow: hidden;
   height: calc(100vh - #{em(60)});
   position: relative;
+  @media (min-width: em(992)) {
+    float: left;
+    width: 70%;
+  }
+  img {
+    max-height: none;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
 }
 
 .stage-text {

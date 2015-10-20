@@ -2,6 +2,7 @@ body {
   background-color: $offwhite;
   margin: 0;
   padding: 0;
+  font-family: $font-family-sans-serif;
 }
 
 .constrain {
@@ -21,4 +22,8 @@ main {
   @media (max-width: #{$sheet-width + 60}) {
     padding: 0 em(30);
   }
+}
+
+section, div, main, header, footer, textarea {
+  box-sizing: border-box;
 }

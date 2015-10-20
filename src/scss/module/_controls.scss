@@ -1,0 +1,23 @@
+.controls {
+  background-color: white;
+  border: 1px solid $gray;
+  padding: 1em;
+  @media (min-width: em(992)) {
+    float: left;
+    width: 25%;
+    margin-left: 4%;
+  }
+  textarea {
+    width: 100%;
+    height: em(100);
+  }
+  div[class$="-controls"] {
+    border-bottom: 1px solid $gray;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    h2 {
+      font-size: em(20);
+      margin: 0 0 em(11, 20);
+    }
+  }
+}

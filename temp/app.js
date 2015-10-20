@@ -20,3 +20,14 @@ $('.controls').on('click','button', function(){
 	$('.stage-text').css('mix-blend-mode',mixBlendMode);
 	$('#mode').text(mixBlendMode);
 });
+
+
+
+//jquery Spectrum Color picker
+$(".basic").spectrum({
+    color: "#E67878",
+    change: function(color) {
+        $("#basic-log").text("Color changed to: " + color.toHexString());
+        $('.stage-text-headline').css('color',color.toHexString());
+    }
+});
