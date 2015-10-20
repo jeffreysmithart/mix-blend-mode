@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mix Blend Mode</title>
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+	<header>
+	</header>
+	<main class="constrain">
+		<section class="stage">
+			<img src="src/img/trees.jpg" alt="tree brnach" title="Bare tree branches">
+			<div class="stage-text">
+				<h1 class="stage-text-headline">This is a mix</h1>
+			</div>
+		</section>
+		<section>
+			<h2>The current mix-blend-mode: <span id="mode">color-burn</span></h2>
+		</section>
+		<section class="controls">
+			<textarea>Enter your text here…</textarea>
+			<div>
+				<button data-blend="normal">Normal</button>
+				<button data-blend="multiply">multiply</button>
+				<button data-blend="screen">screen</button>
+				<button data-blend="overlay">overlay</button>
+				<button data-blend="darken">darken</button>
+				<button data-blend="lighten">lighten</button>
+				<button data-blend="color-dodge">color-dodge</button>
+				<button data-blend="color-burn">color-burn</button>
+				<button data-blend="hard-light">hard-light</button>
+				<button data-blend="soft-light">soft-light</button>
+				<button data-blend="difference">difference</button>
+				<button data-blend="exclusion">exclusion</button>
+				<button data-blend="hue">hue</button>
+				<button data-blend="saturation">saturation</button>
+				<button data-blend="color">color</button>
+				<button data-blend="luminosity">luminosity</button>			
+			</div>
+		</section>
+	</main>
+	<footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+		<script src="js/app.js"></script>
+	</footer>
+	
+</body>
+</html>

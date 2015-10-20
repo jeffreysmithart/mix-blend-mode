@@ -1,0 +1,22 @@
+.stage {
+  overflow: hidden;
+  height: calc(100vh - #{em(60)});
+  position: relative;
+}
+
+.stage-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  mix-blend-mode: color-burn;
+  &-headline {
+    font-family: $font-family-sans-serif;
+    color: $headline-color;
+    font-size: $font-size-headline;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+}

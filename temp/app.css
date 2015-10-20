@@ -1,0 +1,41 @@
+.stage {
+  overflow: hidden;
+  height: calc(100vh - 3.75em);
+  position: relative; }
+
+.stage-text {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  mix-blend-mode: color-burn; }
+  .stage-text-headline {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #E67878;
+    font-size: 19vw;
+    line-height: 1;
+    margin: 0;
+    padding: 0; }
+
+body {
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0; }
+
+.constrain {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
+
+main {
+  margin: 1.875em 0; }
+  @media (max-width: 1060px) {
+    main {
+      padding: 0 1.875em; } }
