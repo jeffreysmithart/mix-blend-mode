@@ -16,8 +16,18 @@
     padding-bottom: 1em;
     margin-bottom: 1em;
     h2 {
+      font-weight: 400;
       font-size: em(20);
       margin: 0 0 em(11, 20);
     }
+  }
+  button {
+    border-radius: 0;
+    display: inline-block;
+    font-size: em(14);
+    margin: em(6) em(3);
+    background-color: $offwhite;
+    border: 2px solid $gray;
+    text-transform: lowercase;
   }
 }

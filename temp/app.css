@@ -466,8 +466,17 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
     padding-bottom: 1em;
     margin-bottom: 1em; }
     .controls div[class$="-controls"] h2 {
+      font-weight: 400;
       font-size: 1.25em;
       margin: 0 0 0.55em; }
+  .controls button {
+    border-radius: 0;
+    display: inline-block;
+    font-size: 0.875em;
+    margin: 0.375em 0.1875em;
+    background-color: #f7f7f7;
+    border: 2px solid #ccc;
+    text-transform: lowercase; }
 
 .stage {
   overflow: hidden;
@@ -479,6 +488,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
       width: 70%; } }
   .stage img {
     max-height: none;
+    max-width: none;
     width: auto;
     height: auto;
     min-width: 100%;
@@ -495,7 +505,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   .stage-text-headline {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #E67878;
-    font-size: 19vw;
+    font-size: 10vw;
     line-height: 1;
     margin: 0;
     padding: 0; }
