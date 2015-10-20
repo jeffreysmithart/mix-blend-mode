@@ -1,0 +1,11 @@
+{
+  "name": "mix-blend-mode",
+  "version": "1.0.0",
+  "description": "Interactive example of using the css mix-blend-mode property",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeffrey Smith",
+  "license": "ISC"
+}

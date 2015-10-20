@@ -11,7 +11,6 @@ gulp.task('styles', function() {
     return gulp.src('src/scss/app.scss')
     .pipe(sass({style: 'expanded'}))
     .pipe(autoprefixer('last 2 version'))
-    .pipe(gulp.dest('temp'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
     .pipe(gulp.dest('css'));
@@ -19,7 +18,6 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
   return gulp.src('src/scripts/**/*.js')
-    .pipe(gulp.dest('temp'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('js'))
@@ -28,13 +26,10 @@ gulp.task('scripts', function() {
 
 gulp.task('watch', function() {
 
-  // Watch .scss files
-  gulp.watch('src/scss/**/*.scss', ['styles']);
+    // Watch .scss files
+    gulp.watch('src/scss/**/*.scss', ['styles']);
 
-  // // Watch .js files
+    // // Watch .js files
     gulp.watch('src/scripts/**/*.js', ['scripts']);
-
-  // // Watch image files
-  // gulp.watch('src/images/**/*', ['images']);
 
 });

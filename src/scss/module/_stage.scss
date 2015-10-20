@@ -2,10 +2,13 @@
   overflow: hidden;
   height: calc(100vh - #{em(60)});
   position: relative;
+  max-height: em(300);
   @media (min-width: em(992)) {
+    max-height: none;
     float: left;
     width: 70%;
   }
+  //image set to cover the entire size of the container
   img {
     max-height: none;
     max-width: none;
@@ -16,6 +19,7 @@
   }
 }
 
+//position the text container absolute to vertically center
 .stage-text {
   position: absolute;
   top: 50%;
@@ -29,6 +33,6 @@
     font-size: $font-size-headline;
     line-height: 1;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
   }
 }

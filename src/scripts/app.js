@@ -1,3 +1,5 @@
+'use strict';
+
 //variable set to false if textarea has not received focus
 var setTextarea = false;
 
@@ -6,13 +8,17 @@ $('.controls textarea').on('focus', function(){
 	if (!setTextarea){
 		$(this).val('');
 	}
-	setTextarea = true;
+	setTextarea = true;//variable set to true to avoid clearing the text area on focus after it has been selected the first time.
 });
+
+
 
 //change out the headline text to match the text in the textarea
 $('.controls textarea').on('keyup', function(){
 	$('.stage-text-headline').text($(this).val());
 });
+
+
 
 //set mix-blend-mode based on button click
 $('.controls').on('click','button', function(){
