@@ -34,5 +34,10 @@
     background-color: $offwhite;
     border: 2px solid $gray;
     text-transform: lowercase;
+    cursor: pointer;
+    transition: background-color .3s;
+    &:hover, &:focus {
+      background-color: $gray;
+    }
   }
 }
